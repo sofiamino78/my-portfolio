@@ -2,7 +2,8 @@ import React from "react";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import MagicButton from "./ui/MagicButton";
-import { FaLocationArrow } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaLocationArrow } from "react-icons/fa";
+import { MdOutlineMail } from "react-icons/md";
 
 const Hero = () => {
   return (
@@ -29,10 +30,10 @@ const Hero = () => {
           </h2>
           <TextGenerateEffect
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
-            words="Transforming Concepts into Seamless User Experiences"
+            words="Hi, Welcome To My Personal Portfolio"
           />
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi, I&apos; Sofía, a Next.js Developer based in Argentina.
+            I&apos;m Sofía, a Next.js Developer based in Argentina.
           </p>
           <a href="#about">
             <MagicButton
@@ -41,6 +42,35 @@ const Hero = () => {
               position="right"
             />
           </a>
+          <nav className="flex gap-4 mt-8 flex-wrap">
+            <a
+              className="bg-white/5 rounded-full border border-white/10 flex justify-center items-center gap-x-2 py-1 px-2 md:py-2 md:px-4 text-xs md:text-base transition hover:scale-110 hover:bg-white/10"
+              href="https://www.linkedin.com/in/sofiamino78/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin />
+              LinkedIn
+            </a>
+            <a
+              className="bg-white/5 rounded-full border border-white/10 flex justify-center items-center gap-x-2 py-1 px-2 md:py-2 md:px-4 text-xs md:text-base transition hover:scale-110 hover:bg-white/10"
+              href="https://github.com/sofiamino78"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub />
+              GitHub
+            </a>
+            <a
+              className="bg-white/5 rounded-full border border-white/10 flex justify-center items-center gap-x-2 py-1 px-2 md:py-2 md:px-4 text-xs md:text-base transition hover:scale-110 hover:bg-white/10"
+              href="mailto:sofiamino78@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <MdOutlineMail />
+              sofiamino78@gmail.com
+            </a>
+          </nav>
         </div>
       </div>
     </div>
